@@ -34,6 +34,7 @@ credentials = pika.PlainCredentials(config['messageSystem']['user'],config['mess
 How to programmatically RECEIVE data
 - In the config settings the 'queueToReceiveFrom' is the queue that will receive
   the query result in via a string JSON format {id:<int>,result:<str>}
+  
 Example Receive:
 ```
 credentials = pika.PlainCredentials(config['messageSystem']['user'],config['messageSystem']['password'])
@@ -48,6 +49,7 @@ def callback(ch, method, properties, body):
 channel.basic_consume(queue=config['messageSystem']['queueToReceiveFrom'], on_message_callback=callback, auto_ack=True)
 channel.start_consuming()
 ```
+
   
 UML Diagram of Application Flow:
 ![image info](./image.png)
