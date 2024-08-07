@@ -11,3 +11,6 @@ How To Use:
  the query result in via a string JSON format {id:<int>,result:<str>}
 -A search result that returns None will indicate that the search query
  was not valid
+
+UML Diagram of Application Flow
+![image info](./image.png)
