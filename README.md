@@ -12,6 +12,7 @@ How To Use:
   was not valid
 
 How it Works:
+
 Requests are sent and received to the microservice via the AMPQ message protocol.
 When a request is received it is then sent via a python module called geopy that forwards
 the search query to a free service called open maps. If the search query is valid it will return
