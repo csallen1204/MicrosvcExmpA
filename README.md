@@ -1,5 +1,4 @@
-# MicrosvcExmpA
-Microservice Example Implementation A
+# Location Search Query Validator
 
 How To Use:
 - Install Python Packages geopy, pika, and random_address
